@@ -4,7 +4,7 @@ echo "🗑️  Uninstalling Kubernetes Monitoring Stack..."
 
 # Uninstall Prometheus stack
 echo "📦 Removing Prometheus and Grafana..."
-helm uninstall prometheus --namespace monitoring
+helm uninstall kube-prometheus-stack --namespace monitoring
 
 # Delete sample app
 echo "🧹 Removing sample application..."
